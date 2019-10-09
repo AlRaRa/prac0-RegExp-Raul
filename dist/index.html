@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/style/main.css"
+    />
+  </head>
+  <body>
+    <fieldset>
+      <legend>Validación de formulario</legend>
+      <span>
+        <form name="FormRegister">
+          <table>
+            <tbody>
+              <tr>
+                <td><label for="name">Nombre:</label></td>
+                <td>
+                  <input Type="text" id="name" name="NAME" />
+                </td>
+                <td class="icon" id="resultName"></td>
+              </tr>
+              <tr>
+                <td><label for="surname">Apellidos:</label></td>
+                <td>
+                  <input Type="text" id="surname" name="SURNAME" />
+                </td>
+                <td class="icon" id="resultSurname"></td>
+              </tr>
+              <tr>
+                <td><label for="email">Email:</label></td>
+                <td>
+                  <input Type="text" id="email" name="EMAIL" />
+                </td>
+                <td class="icon" id="resultEmail"></td>
+              </tr>
+              <tr>
+                <td><label for="direction">Dirección:</label></td>
+                <td>
+                  <input Type="text" id="direction" name="DIRECTION" />
+                </td>
+                <td class="icon" id="resultDirection"></td>
+              </tr>
+              <tr>
+                <td><label for="selectCountry">País:</label></td>
+                <td>
+                  <select id="selectCountry" name="COUNTRY">
+                    <option value="1" selected>España</option>
+                    <option value="2">Estados Unidos</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="cp">CP:</label></td>
+                <td>
+                  <input Type="text" id="cp" name="CP" />
+                </td>
+                <td class="icon" id="resultCp"></td>
+              </tr>
+              <tr>
+                <td><label for="landphone">Telefono Fijo:</label></td>
+                <td>
+                  <input Type="text" id="landphone" name="LANDPHONE" />
+                </td>
+                <td class="icon" id="resultLandphone"></td>
+              </tr>
+              <tr>
+                <td><label for="date">Fecha Nacimiento:</label></td>
+                <td>
+                  <input Type="text" id="date" name="DATE" />
+                </td>
+                <td class="icon" id="resultDate"></td>
+              </tr>
+              <tr>
+                <td><input type="reset" value="Limpiar" /></td>
+                <td>
+                  <input type="submit" class="btn-enviar" value="enviar" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </span>
+    </fieldset>
+  </body>
+  <script src="./app.js"></script>
+</html>
